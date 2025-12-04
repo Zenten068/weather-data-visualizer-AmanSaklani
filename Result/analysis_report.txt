@@ -1,0 +1,80 @@
+--- Weather Data Analysis Report ---
+Generated on: 2025-12-04 19:04:07
+
+Statistical Summary of Numerical Columns (Raw Data):
+|       |   Temperature_C |   Rainfall_mm |   Humidity_perc |   WindSpeed_kmh |
+|:------|----------------:|--------------:|----------------:|----------------:|
+| count |       1095      |    1093       |       1096      |      1096       |
+| mean  |         18.5336 |       1.61729 |         76.7911 |        17.3315  |
+| std   |         10.7095 |       3.39011 |         17.6096 |         6.69349 |
+| min   |          0      |       0       |         40      |         5       |
+| 25%   |          8.5    |       0       |         63      |        12       |
+| 50%   |         19      |       0       |         80      |        17       |
+| 75%   |         28.5    |       0.5     |         92      |        22.5     |
+| max   |         35      |      15.5     |        100      |        34       |
+
+Missing values before cleaning:
+|               | Missing Count   |
+|:--------------|:----------------|
+| Temperature_C | 1               |
+| Rainfall_mm   | 3               |
+| Humidity_perc | 0               |
+| WindSpeed_kmh | 0               |
+| City          | 0               |
+Duplicate rows removed: 52
+
+Cleaned DataFrame Summary:
+|       |   Temperature_C |   Rainfall_mm |   Humidity_perc |   WindSpeed_kmh |
+|:------|----------------:|--------------:|----------------:|----------------:|
+| count |       1043      |    1044       |       1044      |      1044       |
+| mean  |         19.1724 |       1.6932  |         76.0134 |        17.3882  |
+| std   |         10.4959 |       3.45023 |         17.428  |         6.66128 |
+| min   |          0      |       0       |         40      |         5       |
+| 25%   |         10      |       0       |         62      |        12.5     |
+| 50%   |         20      |       0       |         78      |        17       |
+| 75%   |         29      |       1       |         91      |        22.5     |
+| max   |         35      |      15.5     |        100      |        34       |
+
+--- KEY INSIGHTS AND EXTREAME ---
+
+Overall Temperature Extremes:
+  Highest Temp: 35.0°C on 2022-05-14 in Delhi
+  Lowest Temp: 0.0°C on 2022-11-25 in Delhi
+
+Temperature Statistics by City:
+| City   |   max |   min |    mean |     std |
+|:-------|------:|------:|--------:|--------:|
+| Delhi  |    35 |     0 | 19.1724 | 10.4959 |
+
+Correlation Matrix (Numerical Features):
+|               |   Temperature_C |   Rainfall_mm |   Humidity_perc |   WindSpeed_kmh |
+|:--------------|----------------:|--------------:|----------------:|----------------:|
+| Temperature_C |            1.00 |          0.53 |           -0.67 |           -0.09 |
+| Rainfall_mm   |            0.53 |          1.00 |           -0.07 |           -0.28 |
+| Humidity_perc |           -0.67 |         -0.07 |            1.00 |            0.11 |
+| WindSpeed_kmh |           -0.09 |         -0.28 |            0.11 |            1.00 |
+
+Aggregation by Month Name (Sorted by Avg Temp):
+| MonthName   |   Temperature_C |   Rainfall_mm |   Humidity_perc |
+|:------------|----------------:|--------------:|----------------:|
+| December    |            3.98 |         23.00 |           95.45 |
+| January     |            4.89 |          9.20 |           89.42 |
+| November    |            5.76 |          4.80 |           94.28 |
+| October     |           12.16 |         10.80 |           90.27 |
+| February    |           14.54 |          1.70 |           66.94 |
+| September   |           18.25 |         42.50 |           87.02 |
+| March       |           21.02 |          0.20 |           51.97 |
+| August      |           22.67 |        204.00 |           82.67 |
+| April       |           28.05 |          0.00 |           48.19 |
+| July        |           30.07 |        778.00 |           77.99 |
+| May         |           30.91 |          0.00 |           61.67 |
+| June        |           31.21 |        693.50 |           72.17 |
+
+Seasonal Aggregate Statistics:
+| Season   |   ('Temperature_C', 'mean') |   ('Temperature_C', 'std') |   ('Rainfall_mm', 'sum') |   ('Humidity_perc', 'mean') |
+|:---------|----------------------------:|---------------------------:|-------------------------:|----------------------------:|
+| Winter   |                        7.27 |                       5.34 |                    38.70 |                       86.83 |
+| Spring   |                       26.64 |                       5.73 |                     0.20 |                       54.00 |
+| Summer   |                       27.94 |                       5.20 |                  1675.50 |                       77.67 |
+| Autumn   |                       15.37 |                       5.28 |                    53.30 |                       88.56 |
+
