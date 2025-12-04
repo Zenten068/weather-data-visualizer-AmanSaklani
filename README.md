@@ -2,7 +2,7 @@
 
 ## 📝 Overview
 
-> This repository contains the code and documentation for the Weather Data Analysis project. The primary goal was to clean, process, and analyze a three-year dataset of daily weather readings (Temperature, Rainfall, Humidity, Wind Speed) to identify key meteorological trends and seasonal patterns in the city of Delhi.
+> This repository contains the code and documentation for the Weather Data Analysis project. The primary goal was to clean, process, and analyze a three-year dataset of daily weather readings (Temperature, Rainfall, Humidity, Wind Speed) to identify key meteorological trends and seasonal patterns in Delhi.
 
 ## 💾 Dataset Description
 
@@ -49,18 +49,6 @@ This project utilized the following primary tools and libraries, implemented in 
 
 ## 📈 Results and Key Findings
 
-### Summary of Analysis Steps
-
-1. Handling missing values (median imputation).
-
-2. Calculating descriptive statistics on the cleaned data.
-
-3. Determining seasonal boundaries (Winter: Dec-Feb, Spring: Mar-May, Summer: Jun-Aug, Autumn: Sep-Nov).
-
-4. Calculating aggregate statistics (Mean Temperature, Sum Rainfall, Mean Humidity) for each month and season.
-
-5. Generating visualizations to show time-series trends and distributions.
-
 ### Key Insights from ```analysis\_report.txt```
 
 - **Temperature Extremes:** The maximum recorded temperature was $35^\circ \text{C}$ and the minimum was $0^\circ \text{C}$.
@@ -68,10 +56,6 @@ This project utilized the following primary tools and libraries, implemented in 
 - **Wettest Months:** The months of July ($778.00\text{mm}$ total rainfall) and June ($693.50\text{mm}$ total rainfall) were overwhelmingly the wettest, aligning with the Monsoon season.
 
 - **Driest Months:** April and May recorded the lowest rainfall.
-
-- **Coldest Season (Winter):** The average winter temperature was the lowest at $7.27^\circ \text{C}$, and humidity was highest at $86.83\%$.
-
-- **Hottest Season (Summer):** The summer season had the highest average temperature ($31.00^\circ \text{C}$) and the highest total rainfall ($1734.50\text{mm}$).
 
 | Season | Avg Temp | Total Rainfall | Avg Humidity |
 | ------ | -------- | -------------- | ------------ |
