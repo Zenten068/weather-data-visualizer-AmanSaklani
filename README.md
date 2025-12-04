@@ -37,9 +37,9 @@ This project utilized the following primary tools and libraries, implemented in 
 
 ### Data Handling and Analysis
 
-- **Pandas: For efficient data loading, cleaning, time-series resampling (monthly/seasonal aggregation), and statistical calculation.
+- **Pandas:** For efficient data loading, cleaning, time-series resampling (monthly/seasonal aggregation), and statistical calculation.
 
-- **NumPy: For underlying numerical operations.
+- **NumPy:** For underlying numerical operations.
 
 ### Visualization and Reporting
 
@@ -80,3 +80,17 @@ This project utilized the following primary tools and libraries, implemented in 
 | Summer | 27.94°C  | 1675.5 mm      | 77.67%       |
 | Autumn | 15.37°C  | 53.3 mm        | 88.56%       |
 |        |          |                |              |
+
+## 🖥️ Visualization with Matplotlib
+
+### 📈 Daily Temperature Trends Over Time
+![alt text](Result/daily_temperature_trend.png)
+
+### 💨 Time Series of Temperature and Wind Speed
+![alt text](Result/temp_windspeed_timeseries.png)
+
+### 🌧️ Monthly Total Rainfall (mm)
+![alt text](Result/monthly_rainfall_bar.png)
+
+### 💧 Distribution of Humidity Percentage
+![alt text](Result/humidity_histogram.png)
